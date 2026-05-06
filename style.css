@@ -17,15 +17,16 @@ body {
 /* Navbar */
 .navbar {
   width: 100%;
-  padding: 22px 8%;
+  padding: 16px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(2, 6, 23, 0.9);
+  background: rgba(2, 6, 23, 0.95);
   position: sticky;
   top: 0;
   z-index: 1000;
   backdrop-filter: blur(10px);
+  border-bottom: 1px solid #1e293b;
 }
 
 .logo {
@@ -36,7 +37,7 @@ body {
 
 .navbar nav {
   display: flex;
-  gap: 30px;
+  gap: 28px;
 }
 
 .navbar a {
@@ -51,8 +52,7 @@ body {
 
 /* Hero */
 .hero {
-  min-height: 100vh;
-  padding: 0 8%;
+  padding: 120px 8% 80px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -139,7 +139,7 @@ body {
 
 /* Sections */
 .section {
-  padding: 100px 8%;
+  padding: 70px 8%;
 }
 
 .dark {
@@ -290,6 +290,7 @@ footer {
 
 /* Responsive */
 @media (max-width: 900px) {
+
   .hero,
   .about-container,
   .projects-grid,
@@ -314,4 +315,5 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
   }
+
 }
